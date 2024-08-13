@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(202, 222, 252);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --principal-color: #48e;
+    --secundario-color: rgb(157, 186, 231);
+}
+
+header {
+    width: 100%;
+    height: 130px;
+    background-color: var(--principal-color);
+    box-shadow: 0 0 20px 0 black;
+    color: black;
+    text-align: center;
+}
+h1{
+    display: flex;
+    margin: 20px 0 0 0;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mercado{
+    display: inline-block;
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.libre{ 
+    display: inline-block;
+    margin: 0;
+    color: rgb(255, 247, 1);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+main {
+    width: 90%;
+    margin-top: 90px;
+}
+
+table {
+    width: 100%;
+    border-radius: 40px;
+    border: 1px solid var(--principal-color);
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px var(--principal-color);
+    padding-bottom: 40px;
+}
+.header-title{
+    border-bottom: 4px solid black;
+}
+.header-link{
+    border-bottom: 4px solid black;
+}
+.header-img{
+    border-bottom: 4px solid black;
+}
+.header-precio{
+    border-bottom: 4px solid black;
+}
+tr{
+    border-bottom: 50px solid blue;
+}
+th {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td{
+    padding: 20px;
+    color: rgb(3, 4, 94);
+    border-bottom: 1px solid var(--principal-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.precio{
+    color: rgb(0, 150, 0);
+    font-size: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(6, 86, 207);
+}
+
+.link:hover{
+    opacity: .7;
+}
+
+
+.imagenproducto{
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.imagenproducto:hover{
+    transform: scale(1.3);
+}
+
+button{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px;
+    min-width: 110px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button:hover {
+    opacity: .7;
+}
