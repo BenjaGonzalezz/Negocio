@@ -39,5 +39,24 @@ function mostrarProducto(productos){
     });
 }
 
-async function guardarProducto(){
+
+async function guardarProducto(producto){
+    console.log(producto);
+    let url = "http://localhost/Negocio/backend/controller/controlador.php?funcion=guardarProducto";
+    let formData = new FormData();
+    
+    formData.append("id", producto.id);
+    formData.append("title", producto.title);
+    formData.append("link", producto.permalink);
+    formData.append("img", producto.thumbnail);
+    formData.append("price", producto.price);
+
+    let config = {
+        method: 'POST',
+        body: formData
+    }
+
+    let respuesta = await fetch(url, config);
+    let rec = await respuesta.json();
+    console.log(rec);
 }
