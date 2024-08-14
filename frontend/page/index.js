@@ -55,8 +55,10 @@ async function guardarProducto(producto){
         method: 'POST',
         body: formData
     }
+    alert("Se Guardo/Actualizo correctamente");
 
     let respuesta = await fetch(url, config);
     let rec = await respuesta.json();
     console.log(rec);
+
 }
