@@ -4,7 +4,7 @@
 
 <h1> 😎 Productos API 😎 </h1>
 
-Una API sencilla para gestionar productos en una base de datos. Permite agregar, actualizar y recuperar productos.
+Una API sencilla para gestionar productos en una base de datos. Permite Ver, agregar y actualizar productos.
 
 <h2> ✅ Funcionalidades ✅ </h2>
 
